@@ -1,4 +1,6 @@
-![LogiqScript Banner](./assets/lsq.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nyan-coder/logiqscript/refs/heads/main/assets/lsq.png" alt="LogiqScript Banner" width="600">
+</p>
 
 # LogiqScript: Uma Linguagem de Script Dinâmica e Extensível
 
