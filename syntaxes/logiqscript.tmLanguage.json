@@ -1,0 +1,103 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "LogiqScript",
+	"scopeName": "source.logiqscript",
+	"patterns": [
+	  {
+		"include": "#comments"
+	  },
+	  {
+		"include": "#keywords"
+	  },
+	  {
+		"include": "#strings"
+	  },
+	  {
+		"include": "#numbers"
+	  },
+	  {
+		"include": "#entities"
+	  },
+	  {
+		"include": "#operators"
+	  }
+	],
+	"repository": {
+	  "comments": {
+		"patterns": [
+		  {
+			"name": "comment.line.number-sign.lqs",
+			"match": "#.*"
+		  }
+		]
+	  },
+	  "keywords": {
+		"patterns": [
+		  {
+			"name": "keyword.control.lqs",
+			"match": "\\b(if|else|while|for|in|end|try|catch|return)\\b"
+		  },
+		  {
+			"name": "keyword.declaration.lqs",
+			"match": "\\b(let|func|import)\\b"
+		  },
+		  {
+			"name": "keyword.statement.lqs",
+			"match": "\\b(print)\\b"
+		  }
+		]
+	  },
+	  "strings": {
+		"patterns": [
+		  {
+			"name": "string.quoted.double.lqs",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+			  {
+				"name": "constant.character.escape.lqs",
+				"match": "\\\\."
+			  }
+			]
+		  }
+		]
+	  },
+	  "numbers": {
+		"patterns": [
+		  {
+			"name": "constant.numeric.lqs",
+			"match": "\\b[0-9]+(\\.[0-9]+)?\\b"
+		  }
+		]
+	  },
+	  "entities": {
+		"patterns": [
+		  {
+			"name": "support.function.builtin.lqs",
+			"match": "\\b(len|type|append|to_string|to_number|input)\\b"
+		  },
+		  {
+			"name": "support.type.lqs",
+			"match": "\\b(File|InputManager|Https)\\b"
+		  }
+		]
+	  },
+	  "operators": {
+		  "patterns": [
+			  {
+				  "name": "keyword.operator.comparison.lqs",
+				  "match": "==|!=|>=|<=|>|<"
+			  },
+			  {
+				  "name": "keyword.operator.assignment.lqs",
+				  "match": "="
+			  },
+			  {
+				  "name": "keyword.operator.arithmetic.lqs",
+				  "match": "\\+|\\-|\\*|/"
+			  }
+		  ]
+	  }
+	}
+  }
+  
