@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/nyan-coder/logiqscript/refs/heads/main/assets/lsq.png" alt="LogiqScript Banner" width="600">
+  <img src="https://raw.githubusercontent.com/nyan-coder/logiqscript/refs/heads/main/assets/lsq.png" alt="LogiqScript Banner" width="400">
 </p>
 
 # LogiqScript: Uma Linguagem de Script Dinâmica e Extensível
