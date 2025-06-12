@@ -54,7 +54,7 @@ Este exemplo demonstra várias funcionalidades da LogiqScript, como fazer uma re
 
 ```logiqscript
 # Faz uma requisição para uma API pública de piadas
-let req = Https("[https://official-joke-api.appspot.com/random_joke](https://official-joke-api.appspot.com/random_joke)")
+let req = Https("https://official-joke-api.appspot.com/random_joke")
 
 print "Status da requisição: " + to_string(req.status())
 
