@@ -1,0 +1,9 @@
+let x = 10
+
+if x == 10
+print "o"
+end
+
+if x == 20
+print "a"
+end
